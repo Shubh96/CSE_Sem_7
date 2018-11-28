@@ -1,0 +1,29 @@
+.one ul{
+    list-style-type: disc;
+}
+
+.one li{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.two ul{
+    list-style-type: circle;
+}
+
+.two li{
+    color: maroon;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.three ul{
+    list-style-type: square;
+}
+
+.three li{
+    color: rgb(99, 6, 122);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}

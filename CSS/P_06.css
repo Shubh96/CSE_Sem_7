@@ -1,0 +1,6 @@
+body{
+    background: url("img1.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-attachment: fixed; 
+}

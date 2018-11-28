@@ -1,0 +1,17 @@
+.one h2{
+    color: green;
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+.two h2{
+    color: orangered;
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+.three h2{
+    color: lightseagreen;
+    font-size: 28pt;
+    font-weight: bold;
+}

@@ -1,0 +1,56 @@
+<!--
+    1. Create a HTML page containing some paragraph,
+    some listing of items as follows.
+          Tea
+            o  Black tea
+            o  Green tea
+          Coffee
+
+    Create a CSS rule that makes all text in the paragraph 1.5
+    times larger than the base font of the system and colors
+    of the text red, and shifts all the list items right by
+    3ems,and the nested items by 5ems. Use inline style sheets.
+
+    2. Write a css rule that places a background image at the 
+    bottom left corner of the page and tiling it horizontally.
+    The image should remain in place when the user scrolls up 
+    or down. Use external style sheet.
+-->
+
+<html>
+    <head>
+        <title>
+            P_06
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="P_06.css">
+    </head>
+
+    <body>
+        <p id="ul">
+            <ul type="disc" style="color:red; padding-left: 3em; font-size: 1.5rem">
+                <li>Tea
+                    <ul type="circle" style="padding-left: 2em">
+                        <li>Black Tea</li>
+                        <li>Assam Tea</li>
+                        <li>Green Tea</li>
+                        <li>Ginger Tea</li>
+                        <li>Lemon Tea</li>
+                        <li>Cardamom Tea</li>
+                    </ul><br>
+                </li>
+
+                <li>Coffee
+                    <ul type="circle" style="padding-left: 2em">
+                        <li>Espresso</li>
+                        <li>Double Espresso</li>
+                        <li>Short Macchiato</li>
+                        <li>Long Macchiato</li>
+                        <li>Cappuccino</li>
+                        <li>Café Latte</li>
+                    </ul><br>
+                </li>
+            </ul>
+        </p>
+    </body>
+</html>
