@@ -1,0 +1,86 @@
+<!--
+    Start your web page with an <html> tag
+        i) Add a heading.
+        ii) Add a title.
+        iii) Start the <body> section.
+        iv) Start a new paragraph.
+
+    Create Hyperlinks:
+        (a)  Within the HTML document. 
+        (b)  To another URL. 
+        (c)  To a file that can be rendered in the browser.
+        (d) Create an unordered list,
+        (e)  Create an ordered list,
+        (f)  Use various bullet styles,
+        (g)  Created nested lists,
+        (h)  Use the font tag in conjunction with lists,
+        (i)  Create definition lists,
+        (j)  Use graphics as bullets.
+-->
+
+<html>
+    <head>
+        <title>
+            P_03
+        </title>
+    </head>
+
+    <body>
+        <div id="ul">
+            The following bullets show links and use of unordered list. Also see the use of different bullet styles.
+            <ul>
+                <li style="list-style-type:circle">Link within same document (takes you to OL below) <a href="#ol">Click here.</a></li>
+                <li style="list-style-type:disc">Link to different URL. <a href="https://subhamsarda.herokuapp.com">Click here.</a></li>
+                <li style="list-style-type:square">Link to a file that can be rendered in browser. <a href="img1.png" media="min-width: 480px">Click Here.</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <hr>
+        
+        <div id="ol">
+            <ol>
+                <li style="font-family:cursive">Cricket
+                    <ol type="i" style="font-family:'Times New Roman', Times, serif">
+                        <li>Test match</li>
+                        <li>ODI</li>
+                        <li>T-20</li>
+                    </ol>
+                </li>
+
+                <li style="font-family:cursive">Tennis
+                    <ol type="i" style="font-family:'Times New Roman', Times, serif">
+                        <li>Singles</li>
+                        <li>Doubles</li>
+                    </ol>
+                </li>
+
+                <li style="font-family:cursive">Badminton
+                    <ol type="i" style="font-family:'Times New Roman', Times, serif">
+                        <li>Singles</li>
+                        <li>Doubles</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <br>
+        <hr>
+
+        <div id="dl">
+            <dl>
+                <dt>Virat Kohli</dt>
+                <dd>-- Batsman, Captain</dd>
+
+                <dt>MS Dhoni</dt>
+                <dd>-- WK-Batsman</dd>
+
+                <dt>Rohit Sharma</dt>
+                <dd>-- Batsman</dd>
+
+                <dt>Jasprit Bumrah</dt>
+                <dd>-- Right Arm Fast Bowler</dd>
+            </dl>
+        </div>
+    </body>
+</html>
