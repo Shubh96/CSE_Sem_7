@@ -1,0 +1,23 @@
+<!--
+Write a XML program that will create an XML 
+document which contains your mailing address. 
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contact-list>
+    <address>
+        <street>19, Cormac Street</street>
+        <city>Siliguri</city>
+        <zip-code>734012</zip-code>
+        <state>West Bengal</state>
+        <country>India</country>
+    </address>
+
+    <address>
+        <street>20, MG Road</street>
+        <city>Siliguri</city>
+        <zip-code>734016</zip-code>
+        <state>West Bengal</state>
+        <country>India</country>
+    </address>
+</contact-list>

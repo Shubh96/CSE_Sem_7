@@ -1,0 +1,24 @@
+<!--
+Write a XML program that will create an XML document which
+contains description of three book category.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book-list>
+    <book>
+        <title>Bird Box</title>
+        <isbn>0062259652</isbn>
+        <category name="Horror">Horror, Thriller, Post-Apocalyptic fiction</category>    
+    </book>
+    <book>
+        <title>Solaris</title>
+        <isbn>0156027607</isbn>
+        <category name="Science Fiction">Philosophical SciFi novel</category>    
+    </book>
+    <book>
+        <title>Diary of a Nobody</title>
+        <isbn>1853262013</isbn>
+        <category name="Humour">An English comic novel</category>
+    </book>
+</book-list>

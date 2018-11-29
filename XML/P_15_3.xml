@@ -1,0 +1,26 @@
+<!--
+    Create an XML document that contains the name and price per pound of coffee beans. 
+    i) In your XML document mention all properties of XML declaration. 
+    ii) The root element has name <coffee_bean> 
+    iii) Create nested elements for different types of coffee. 
+    iv) Validate the document and if any parsing error is present, fix them. 
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<coffee-bean>
+    <coffee-type>
+        <type-name>Type 1</type-name>
+        <price>22</price>
+        <desc>This is Type 1 Coffee</desc>        
+    </coffee-type>
+    <coffee-type>
+        <type-name>Type 2</type-name>
+        <price>43</price>
+        <desc>This is Type 2 Coffee</desc>        
+    </coffee-type>
+    <coffee-type>
+        <type-name>Type 3</type-name>
+        <price>61</price>
+        <desc>This is Type 3 Coffee</desc>        
+    </coffee-type>
+</coffee-bean>

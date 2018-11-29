@@ -1,0 +1,39 @@
+<!--
+    Create an XML version of your resume. Include elements such as your
+    name and position desired. Nest each of your former employers within
+    an <employer> element. Also, nest your educational experience within
+    an <education> element. Create any other nested elements that you deem
+    appropriate, such as <references> or <spcl_skills> elements.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+    <candidate>
+        <name>Saikat Mitra</name>
+        <position-desired>Programmer</position-desired>
+        <employer>
+            <former-employer>TCS</former-employer>
+            <former-employer>Wipro</former-employer>
+            <current-employer>Google</current-employer>
+        </employer>
+        <education>
+            <graduation>
+                <degree>B.Tech</degree>
+                <discipline>CSE</discipline>
+            </graduation>
+            <masters>
+                <degree>M.Tech</degree>
+                <discipline>CSE</discipline>
+            </masters>
+        </education>
+        <references>
+            Kaushik Sinha, ks@gmail.com
+        </references>
+        <spcl-skills>
+            <skill>C</skill>
+            <skill>Algorithm Analysis</skill>
+            <skill>Cryptography and Network Security</skill>
+            <skill>C++</skill>
+        </spcl-skills>
+    </candidate>
+</resume>

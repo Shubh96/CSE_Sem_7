@@ -1,0 +1,37 @@
+<!--
+    Create an XML document that contains airline flight information.
+    i) In your XML document mention all properties of XML declaration.
+    ii) The root element has name <airlines>
+    iii) Create three nested <carrier> elements for three separate airlines.
+    Each element should include a name attribute.
+    iv) Within each <carrier> nest at least two <flight>, each of which
+    contains departure_city, destination_ city, fl_no, dept_time.
+    v) Validate the document and if any parsing error is present fix them.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<airlines>
+    <carrier name="Indian Airlines">
+        <flight>
+            <departure-city>Bagdogra</departure-city>
+            <destination-city>Bangalore</destination-city>
+            <fl-no>123456</fl-no>
+            <dept-time>22:30</dept-time>
+        </flight>
+        <flight>
+            <departure-city>Bagdogra</departure-city>
+            <destination-city>New Delhi</destination-city>
+            <fl-no>234567</fl-no>
+            <dept-time>18:30</dept-time>
+        </flight>
+    </carrier>
+    <carrier name="SpiceJet">
+        <flight>
+            <departure-city>Bagdogra</departure-city>
+            <destination-city>Hyderabad</destination-city>
+            <fl-no>456789</fl-no>
+            <dept-time>22:30</dept-time>
+        </flight>        
+    </carrier>
+</airlines>
