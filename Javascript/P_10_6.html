@@ -1,0 +1,36 @@
+<!-- Design an html page that has three buttons ‘red’, ‘green’, ‘blue’. 
+    If you click any  of them the background color also changes as the name of 
+    the button showing the corresponding alert message.
+-->
+
+<html>
+    <head>
+        <title>
+            P_10_6
+        </title>
+    </head>
+
+    <body>
+        <h3>Click buttons below to change background color</h3>
+        <button type="submit" id="red" style="height: 5em; width: 5em">Red</button>
+        <br><br>
+        <button type="submit" id="green" style="height: 5em; width: 5em">Green</button>
+        <br><br>
+        <button type="submit" id="blue" style="height: 5em; width: 5em">Blue</button>
+        <br><br>
+    </body>
+
+    <script>
+        document.getElementById("red").onclick = function(){
+            document.body.style.backgroundColor = "#ff4d4d";
+        }
+
+        document.getElementById("green").onclick = function(){
+            document.body.style.backgroundColor = "#99ff66";
+        }
+
+        document.getElementById("blue").onclick = function(){
+            document.body.style.backgroundColor = "#80dfff";
+        }
+    </script>
+</html>

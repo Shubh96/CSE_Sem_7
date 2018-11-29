@@ -1,0 +1,29 @@
+<!-- 
+    Write a JavaScript program to create a button. If you click on it, 
+    a prompt box will appear asking your name. If you enter your name
+    and click ‘ok’ button a greeting message will appear. 
+-->
+
+<html>
+    <head>
+        <title>
+            P_10_5
+        </title>
+    </head>
+
+    <body>
+        <button type="submit" id="name" onclick="action()">
+            Enter Name
+        </button>
+    </body>
+
+    <script>
+        function action(){
+            name = prompt("Enter your name");
+
+            if(name != null){
+                alert("Hello!! " + name);
+            }
+        }
+    </script>
+</html>

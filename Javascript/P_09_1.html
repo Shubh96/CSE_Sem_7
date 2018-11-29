@@ -1,0 +1,50 @@
+<!--
+    Design a html page that has three fields email, name and age and a submit button. If you enter 
+    wrong email (e.g. “@” sign is missing), name (>10 characters), age (>100) corresponding alert 
+    message/s will be fired.
+-->
+
+<html>
+    <head>
+        <title>
+            P_09_1
+        </title>
+    </head>
+
+    <body>
+        Name: <input type = "text" id = "name"/>
+        <br><br>
+        Email: <input type = "email" id = "email"/>
+        <br><br>
+        Age: <input type="number" id = "age" />
+        <br><br>
+        <button type="submit" id="submit" onclick= "validate()">Submit</button>
+    </body>
+
+    <script>
+        function validate(){
+            var test = 1;
+
+            if (document.getElementById("name").value.length > 10){
+                alert("Name is too long");
+                test = 0;
+            }
+
+            if (document.getElementById("age").value > 100){
+                alert("Too aged");
+                test = 0;
+            }
+
+            var emailPatt = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
+            if(!emailPatt.test(document.getElementById("email").value)){
+                alert("Provide a vaild email ID");
+                test = 0;
+            }
+
+            if(test == 1){
+                alert("Congrats! You filled the form correctly.");
+            }
+        }
+    </script>
+</html>

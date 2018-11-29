@@ -1,0 +1,39 @@
+<!--
+    Write a JavaScript program to display a clock in an html page. 
+-->
+
+<html>
+    <head>
+        <title>
+            P_10_4
+        </title>
+
+        <script>
+            function clock(){
+                var date = new Date();
+    
+                day = date.getDate();
+                month = date.getMonth() + 1;
+                year = date.getFullYear();
+    
+                hours = date.getHours();
+                mins = date.getMinutes();
+                secs = date.getSeconds();
+                msecs = date.getMilliseconds();
+    
+                var today = day + "/" + month + "/" + year;
+                var time = hours + ":" + mins + ":" + secs + ":" + msecs;
+    
+                document.getElementById("clock").innerHTML = today + ",&nbsp" + time;
+
+                setTimeout(clock, 500);
+            }
+        </script>
+    </head>
+
+    <body onload="clock()">
+        <h3 id = "clock">
+
+        </h3>
+    </body>
+</html>

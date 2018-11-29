@@ -1,0 +1,61 @@
+<!-- 
+    Write a JavaScript program to validate a form that contains 4 fields 
+    (Name, Phone No, User name, Password) by using Regular expressions.
+-->
+
+<html>
+    <head>
+        <title>
+            P_10_8
+        </title>
+    </head>
+
+    <body>
+        <form name="myForm">
+            Name: <input type = "text" id = "name"/>
+            <br><br>
+            Phone: <input type = "number" id = "phone"/>
+            <br><br>
+            Username: <input type="text" id = "uname" />
+            <br><br>
+            Password: <input type="number" id = "pwd" />
+            <br><br>
+
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
+
+    <script>
+        function validate(){
+            var test = 1;
+            var nameRegex = /^[A-Za-z\s]+$/;
+            var phoneRegex = /^[0-9+]{10,13}$/;
+            var unameRegex = /^[A-Za-z0-9_]{1,10}$/;
+            var pwdregex = /^[A-Za-z0-9!@#$%^&*()_]{6,15}$/;
+
+            if(!nameRegex.test(document.getElementById("name").value)){
+                alert("Enter a valid name");
+                test = 0;
+            }
+
+            if(!phoneRegex.test(document.getElementById("phone").value)){
+                alert("Provide a vaild phone number");
+                test = 0;
+            }
+
+            if(!unameRegex.test(document.getElementById("uname").value)){
+                alert("Provide a vaild username");
+                test = 0;
+            }
+
+            if(!unameRegex.test(document.getElementById("pwd").value)){
+                alert("Provide a vaild password");
+                test = 0;
+            }
+
+            if(test == 1){
+                alert("Congrats! You filled the form correctly.");
+            }
+        }
+    </script>
+</html>
